@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>CV SOFIA VERA TRIPODI</title>
+</head>
+
+
+<body>
+
+
+    <!-- INICIO Y BARRA DE NAVEGACION-->
+    
+    <section class="inicio" id="inicio">
+        <div class="contenido-seccion">
+
+            <header>
+
+                <div class="barra-de-navegacion" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-warehouse"></i>
+
+                </div>
+
+                <nav class="nav" id="nav">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#misdatos">Mis Datos</a>
+                    <a href="#formacion">Formacion Academica</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#contacto">Contacto</a>
+                </nav>
+
+            </header>
+
+            <!-- PORTADA-->
+            <div class="informacion">
+                <h1>SOFIA VERA TRIPODI</h1>
+                <h2>Arquitecta</h2>
+            </div> 
+            
+            <div class="foto">
+                <img src="./imagenes/foto perfil">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PRESENTACION Y DATOS PERSONALES-->
+
+    <section class="misdatos" id="misdatos">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">Mis datos</h2>
+
+            <p class="presentacion">Arquitecta con más de 10 años de experiencia en estudios de arquitectura y empresas constructoras. 
+                He participado en el proceso completo de construcción desde mediciones, planos, hasta la supervisión de obra.</p>
+
+            <div class="fila">
+                <div class="col">
+                    <i class="fa-solid fa-id-card"></i>
+                    <span class="titulo-detalle">D.N.I</span>
+                    <p>34.244.820</p>
+                </div>
+
+
+                <div class="col">
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <span class="titulo-detalle">Nacionalidad</span>
+                    <p>Argentina</p>
+                </div>
+
+
+                <div class="col">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span class="titulo-detalle">Fecha de Nacimiento</span>
+                    <p>21 de Mayo de 1990</p>
+                </div>
+
+        
+
+                <div class="col">
+                    <i class="fa-solid fa-phone"></i>  
+                    <span class="titulo-detalle">Teléfono</span>
+                    <p>(011) 6469-0000</p>
+                </div>
+
+
+                <div class="col">                   
+                    <i class="fa-solid fa-envelope"></i>     
+                    <span class="titulo-detalle">Correo</span>
+                    <p>sofiaveratripodi@gmail.com</p>
+                </div>
+
+
+                <div class="col">                  
+                    <i class="fa-solid fa-globe"></i>                  
+                    <span class="titulo-detalle"> Web</span>
+                    <p>arquitectast.com</p>
+                </div>
+            </div>
+
+        </div>    
+
+    </section> 
+
+
+     <!-- SECCION ESTUDIOS -->
+    <section class="formacion" id="formacion">
+        <div class="contenido">
+            <h2 class="titulo">Formación Academica</h2>
+
+
+            
+            <div class="fila">
+                <div class="col">
+                    <i class="fa-solid fa-star"></i>
+                    <span class="titulo-detalle">Bachiller en Economia y Administración</span>
+                    <h3>Institución Nuestra Señora del Pilar</h3>
+                    <h4>Ituzaingó, Buenos Aires</h4>
+                </div>
+
+
+                <div class="col">
+                    <i class="fa-solid fa-star"></i>
+                    <span class="titulo-detalle">Licenciada en Arquitectura</span>
+                    <h3>Universidad de Morón</h3>
+                    <h4>Morón, Buenos Aires</h4>
+                </div>
+
+            </div>
+
+        </div>    
+
+    </section>      
+
+    <!-- SECCION HABILIDADES-->
+    <section class="habilidades" id="habilidades">
+        <div class="contenido-seccion">
+            <h2 class="titulo-seccion">Mis habilidades</h2>
+        
+
+            <div class="fila">
+                <div class="col">
+                    <span>Autocad - Muy bueno</span>
+                    
+                </div>
+                <div class="col">
+                    <span>Presto - Muy bueno</span>
+                   
+                </div>
+            </div>
+
+
+            <div class="fila">
+                <div class="col">
+                    <span>Microsoft Office - Muy bueno</span>
+                
+                </div>
+
+                <div class="col">
+                    <span>Gestión de equipos - Muy bueno</span>
+        
+                </div>
+            </div>
+
+        </div>
+    </section>  
+    
+    <!-- SECCION CONTACTO-->
+
+    <section class="contacto" id="contacto">
+        
+        <div class="formulario-contacto">			
+            <h1>Formulario de contacto</h1>
+            <h3>Tambien puede completar el siguiente formulario y a la brevedad me comunico con ud.</h3>
+      
+      
+            <form action="submeter-formulario.php" method="post">				
+            
+                        <p>
+                            <label for="nombre" class="colocar_nombre">Nombre
+                                <span class="obligatorio">*</span>
+                            </label>
+                                <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                        </p>
+                        
+                        
+                        <p>
+                            <label for="email" class="colocar_email">Email
+                                <span class="obligatorio">*</span>
+                            </label>
+                                <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                        </p>
+                        
+                        
+
+                        <p>
+                            <label for="telefone" class="colocar_telefono">Teléfono
+                            </label>
+                                <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                        </p>		
+                                  
+            
+                                  
+                        <p>
+                            <label for="asunto" class="colocar_asunto">Asunto
+                                <span class="obligatorio">*</span>
+                            </label>
+                                <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                        </p>		
+                        
+                        
+
+                        <p>
+                            <label for="mensaje" class="colocar_mensaje">Mensaje
+                                <span class="obligatorio">*</span>
+                            </label>                     
+                                    
+                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                        </p>	  								
+                                  
+                        <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+      
+                        <p class="aviso">
+                            <span class="obligatorio"> * </span>los campos son obligatorios.
+                        </p>					
+            </form>        
+            
+            
+        </div>                
+    
+    
+    
+    </section>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
+
+
+
+
